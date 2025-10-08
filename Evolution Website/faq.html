@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Evolution Institute - Home</title>
+		<link rel="stylesheet" href="faq.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+	</head>
+	
+<body>
+
+
+<!-- Scroll to Top Button ---------------------------------------------------------------------------------------------------------------------------->
+	<button id="scrollToTopBtn" title="Go to top" style="display: none;">↑</button>
+
+	<script>
+		
+		document.addEventListener("DOMContentLoaded", function () 
+		{
+			const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+	
+			// Show or hide the button on scroll
+			window.addEventListener("scroll", function () 
+			{
+				if (window.scrollY > 300) 
+				{
+					scrollToTopBtn.style.display = "flex"; // Using flex, not block (as our CSS uses flexbox)
+				} 
+				else 
+				{
+					scrollToTopBtn.style.display = "none";
+				}
+			});
+
+			// Scroll to top on button click
+			scrollToTopBtn.addEventListener("click", function () 
+			{
+				window.scrollTo({ top: 0, behavior: "smooth" });
+			});
+		});
+	
+	</script>
+
+
+<!-- Scroll to Top Button ends ----------------------------------------------------------------------------------------------------------------------->
+
+
+<!-- Top Bar ----------------------------------------------------------------------------------------------------------------------------------------->
+	
+	<div class="top-bar">
+		
+		<!-- Left Section -->
+		<div class="top-left">
+			
+			<span>
+				<i class="fas fa-clock"></i> Open 24/7
+			</span>
+			
+			<span class="email-wrap">
+			
+				<i class="fas fa-envelope"></i>
+				<a href="mailto:evolutioncareerinstitute2024@gmail.com" class="email-link">
+					evolutioncareerinstitute2024@gmail.com
+				</a>
+			</span>
+		
+		</div>
+
+		<!-- Center Section -->
+		<div class="top-center">
+			<a href="https://www.facebook.com/share/1BC3oGU62u/" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+			<a href="https://www.instagram.com/evolution_career_institute_seh?utm_source=qr&igsh=YXVoejFyNzJlMXNi" class="icon instagram"><i class="fab fa-instagram"></i></a>
+			<a href="https://youtube.com/@parmarclasses1981?si=9LxMieaLAbIPqFxR" class="icon youtube"><i class="fab fa-youtube"></i></a>
+		</div>
+
+		<!-- Right Section -->
+		<div class="top-right">
+			<a href="tel:+919999999999" class="call-btn"><i class="fas fa-phone"></i> Call Us</a>
+		</div>
+	
+	</div>
+
+
+<!-- Top Bar ends ------------------------------------------------------------------------------------------------------------------------------------>
+
+
+<!-- Header ------------------------------------------------------------------------------------------------------------------------------------------>
+	<header class="header-container">
+	
+		<div class="logo-nav-wrapper">
+		
+			<div class="logo">
+
+				<img src="logo.jpg" alt="Evolution Logo" />			
+				<div class="logo-text">
+					<div class="evolution-word">Evolution</div>
+					<div class="career-word">Career Institute Pvt. Ltd.</div>
+				</div>
+			
+			</div>
+
+			<!-- Hamburger Icon -->
+			<button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">☰</button>
+
+			<!-- Desktop Nav -->
+			<nav class="desktop-nav">
+				<a href="index.html">Home</a>
+				<a href="features.html">Features</a>
+				
+				<!-- Courses Dropdown -->
+				<div class="dropdown">
+					<a href="#" class="dropbtn" id="coursesDropdown">
+						<span class="dropbtn-text">Courses</span>
+						<span class="arrow-down desktop-arrow"></span>
+					</a>
+					<div class="dropdown-content">
+						<a href="neet_course.html">NEET</a>
+						<a href="pnst_course.html">PNST</a>
+						<a href="cuet_course.html">CUET (Bio)</a>
+						<a href="para-medical_course.html">Para-Medical</a>
+					</div>
+				</div>
+				
+				<a href="about.html">About Us</a>
+			
+				<!-- Admissions Dropdown -->
+				<div class="dropdown">
+					<a href="#" class="dropbtn" id="admissionsDropdown">
+						<span class="dropbtn-text">Admissions</span>
+						<span class="arrow-down desktop-arrow"></span>
+					</a>
+					<div class="dropdown-content">
+						<a href="how-to-apply.html">How to apply</a>
+						<a href="scholarship.html">Scholarship</a>
+						<a href="faq.html">FAQ's</a>
+						<a href="t&c.html">Terms & Conditions</a>
+					</div>
+				</div>
+				
+				<a href="contact.html">Contact Us</a>
+			
+			</nav>
+		
+		</div>
+
+		<!-- Mobile Sidebar Nav -->
+		<div class="mobile-nav-overlay" id="mobileNav">
+			
+			<div class="mobile-header">
+
+				<!-- Top row: logo/title (left) and close button (right) -->
+				<div class="top-row">
+					
+					<div class="left-logo-title">
+						<img src="logo.jpg" alt="Logo" />
+					
+						<div class="mobile-title">
+							<div class="evolution-word">Evolution</div>
+							<div class="career-word">Career Institute Pvt. Ltd.</div>
+						</div>
+
+					</div>
+					<button class="close-btn" id="closeBtn">X</button>
+				
+				</div>
+
+				<!-- Centered social icons below -->
+				<div class="center-icons">
+					<a href="https://www.facebook.com/share/1BC3oGU62u/" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/evolution_career_institute_seh?utm_source=qr&igsh=YXVoejFyNzJlMXNi" class="icon instagram"><i class="fab fa-instagram"></i></a>
+					<a href="https://youtube.com/@parmarclasses1981?si=9LxMieaLAbIPqFxR" class="icon youtube"><i class="fab fa-youtube"></i></a>
+				</div>
+
+			</div>
+
+			<nav class="mobile-nav">
+				
+				<a href="index.html">Home</a>
+				<a href="features.html">Features</a>
+
+				<!-------		Courses		------->
+				<div class="mobile-dropdown">
+					<button id="coursesDropdownToggle" class="mobile-dropbtn">
+						Courses <span class="arrow-down rotate-arrow">▼</span>
+					</button>
+
+					<div id="coursesDropdownMenu" class="mobile-dropdown-content">
+						<a href="neet_course.html">NEET</a>
+						<a href="pnst_course.html">PNST</a>
+						<a href="cuet_course.html">CUET (Bio)</a>
+						<a href="para-medical_course.html">Para-Medical</a></div>
+				</div>
+				<!-------		Courses ends		------->
+
+				<a href="about.html">About Us</a>
+				
+				<!-------		Admissions		------->
+				<div class="mobile-dropdown">	
+					<button id="mobileDropdownToggle" class="mobile-dropbtn">
+						Admissions <span class="arrow-down rotate-arrow">▼</span>
+
+					</button>
+
+					<div id="mobileDropdownMenu" class="mobile-dropdown-content">
+						<a href="how-to-apply.html">How to apply</a>
+						<a href="scholarship.html">Scholarship</a>
+						<a href="faq.html">FAQ's</a>
+						<a href="t&c.html">Terms & Conditions</a>
+					</div>
+				</div>
+				<!-------		Admissions ends		------->
+				
+				<a href="contact.html">Contact Us</a>
+				
+				<a href="tel:+919999999999" class="apply-btn"><i class="fas fa-phone"></i> Call Us</a>
+				
+				<div class="contact-info">
+					<h2> Contact Info </h2><br>
+					<p>
+						<strong>“BHOPAL NAKA”</strong>, in front of P.G College Bhopal road, Sehore, Madhya Pradesh
+					</p>
+					<p class="phone-row">
+						📞 <a href="tel:0157200000" class="phone-link">01572 00000</a>, 
+						📞 <a href="tel:0157200000" class="phone-link">01572 00000</a>
+					</p>
+				</div>
+
+			</nav>
+
+		</div>
+	
+	</header>
+
+	<!-- JavaScript to toggle the hamburger menu -->
+	<script>
+	
+		// Grab elements
+		const hamburgerBtn = document.getElementById("hamburgerBtn");
+		const mobileNav = document.getElementById("mobileNav");
+		const closeBtn = document.getElementById("closeBtn");
+
+		// Track menu state
+		let isMenuOpen = false;
+
+		// Toggle mobile menu when hamburger is clicked
+		hamburgerBtn.addEventListener("click", () => 
+		{
+			isMenuOpen = !isMenuOpen;
+			mobileNav.classList.toggle("show", isMenuOpen);
+			document.body.classList.toggle("menu-open", isMenuOpen);
+		});
+
+		// Close mobile menu on close (X) button
+		closeBtn.addEventListener("click", () => 
+		{
+			isMenuOpen = false;
+			mobileNav.classList.remove("show");
+			document.body.classList.remove("menu-open");
+		});
+
+		// Close mobile menu when a link is clicked
+		const mobileLinks = document.querySelectorAll(".mobile-nav a");
+		mobileLinks.forEach(link => 
+		{
+			link.addEventListener("click", () => 
+			{
+				isMenuOpen = false;
+				mobileNav.classList.remove("show");
+				document.body.classList.remove("menu-open");
+			});
+		});
+
+		// Highlight current page in both navs
+		const currentPage = location.pathname.split("/").pop();
+
+		document.querySelectorAll(".desktop-nav a").forEach(link => 
+		{
+			if (link.getAttribute("href") === currentPage) 
+			{
+				link.classList.add("active");
+			}
+		});
+
+		document.querySelectorAll(".mobile-nav a").forEach(link => 
+		{
+			if (link.getAttribute("href") === currentPage) 
+			{
+				link.classList.add("active");
+			}
+		});
+	
+
+		// Mobile dropdown toggle  
+		document.addEventListener("DOMContentLoaded", () => 
+		{
+			// for Admissions
+			const mobileToggle = document.getElementById("mobileDropdownToggle");
+			const mobileMenu = document.getElementById("mobileDropdownMenu");
+			const arrowSpan = mobileToggle.querySelector(".arrow-down");
+
+			if (mobileMenu) 
+			{
+				mobileMenu.classList.remove("open");
+			}
+
+			if (mobileToggle && mobileMenu) 
+			{
+				mobileToggle.addEventListener("click", (e) => 
+				{
+					e.preventDefault();
+					e.stopImmediatePropagation();
+
+					// Toggle submenu
+					mobileMenu.classList.toggle("open");
+
+					// Toggle arrow direction
+					if (mobileMenu.classList.contains("open")) 
+					{
+						arrowSpan.textContent = "►"; // Right arrow
+					} 
+					else 
+					{
+						arrowSpan.textContent = "▼"; // Down arrow
+					}
+				});
+			}
+	
+			// for Courses
+			const coursesToggle = document.getElementById("coursesDropdownToggle");
+			const coursesMenu = document.getElementById("coursesDropdownMenu");
+			const coursesArrow = coursesToggle.querySelector(".arrow-down");
+
+			if (coursesMenu) 
+			{
+			  coursesMenu.classList.remove("open");
+			}
+
+			if (coursesToggle && coursesMenu) 
+			{
+				coursesToggle.addEventListener("click", (e) => 
+				{
+					e.preventDefault();
+					e.stopImmediatePropagation();
+
+					coursesMenu.classList.toggle("open");
+
+					if (coursesMenu.classList.contains("open")) 
+					{
+						coursesArrow.textContent = "►"; // Right arrow
+					} 
+					else
+					{
+						coursesArrow.textContent = "▼"; // Down arrow
+					}
+				});
+			}
+		});
+
+	</script>
+
+
+<!-- Header ends ------------------------------------------------------------------------------------------------------------------------------------->
+
+<section class="faq-container" id="faq-section">
+  <h2 class="faq-heading">What People Ask to Us</h2>
+  <div class="underline"></div>
+
+  <div class="faq fade-up">
+    <!-- Q1 - Default Open -->
+    <button class="accordion active">
+      <span class="question">1. How can I take admission at Evolution Career Institute Sehore?</span>
+      <span class="icon">−</span>
+    </button>
+    <div class="panel show">
+      <p>You can take admission directly at the institute or through the Evolution Scholarship Admission Test (ESAT) conducted every year for NEET, PNST, CUET (Bio), and Para-Medical courses.</p>
+    </div>
+
+    <!-- Q2 -->
+    <button class="accordion">
+      <span class="question">2. Does Evolution offer separate coaching for PNST and CUET (Bio)?</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="panel">
+      <p>Yes, we offer individual programs for PNST and CUET (Bio), with subject-specific mentors and tailored test series.</p>
+    </div>
+
+    <!-- Q3 -->
+    <button class="accordion">
+      <span class="question">3. Is there any entrance test for admission?</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="panel">
+      <p>Yes, students can appear for the ESAT (Evolution Scholarship Admission Test) to qualify for merit-based admission.</p>
+    </div>
+
+    <!-- Add more questions below as needed -->
+  </div>
+</section>
+
+<script>
+  // Accordion functionality
+  const accordions = document.querySelectorAll(".accordion");
+  const panels = document.querySelectorAll(".panel");
+
+  accordions.forEach((acc, index) => {
+    acc.addEventListener("click", function () {
+      const panel = this.nextElementSibling;
+      const icon = this.querySelector(".icon");
+
+      // Collapse other panels
+      accordions.forEach((a, i) => {
+        if (index !== i) {
+          a.classList.remove("active");
+          a.querySelector(".icon").textContent = "+";
+          panels[i].classList.remove("show");
+        }
+      });
+
+      // Toggle current panel
+      this.classList.toggle("active");
+      if (panel.classList.contains("show")) {
+        panel.classList.remove("show");
+        icon.textContent = "+";
+      } else {
+        panel.classList.add("show");
+        icon.textContent = "−";
+      }
+    });
+  });
+
+  // Smooth scroll animation with Intersection Observer
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("revealed");
+          observer.unobserve(entry.target); // Animate once
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
+</script>
+
+
+<!-- Footer Section ---------------------------------------------------------------------------------------------------------------------------------->
+
+	<footer class="footer">
+		
+		<div class="footer-links">
+			
+			<div>
+				
+				<h4>Quick Links</h4>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="courses.html">Courses</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			
+			</div>
+			
+			<div>
+			
+				<h4>Important</h4>
+				<ul>
+					<li><a href="scholarship.html">Scholarship</a></li>
+					<li><a href="admissions.html">Admissions</a></li>
+					<li><a href="features.html">Features</a></li>
+				</ul>
+			
+			</div>
+			
+			<div>
+			
+				<h4>Contact Info</h4>
+				<p>Email: evolutioninstitute@gmail.com</p>
+				<p>Phone: +91 96853 36065</p>
+				<p>Address: Sehore, Madhya Pradesh, India</p>
+			
+			</div>
+			
+		</div>
+    
+		<div class="footer-bottom">
+			<p>&copy; 2025 Evolution Institute. All Rights Reserved.</p>
+		</div>
+	
+	</footer>
+
+
+<!-- Footer Section ends ----------------------------------------------------------------------------------------------------------------------------->
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+
+
+
+
+
+<section class="faq-container" id="faq-section">
+  <h2 class="faq-heading">What People Ask to Us</h2>
+  <div class="underline"></div>
+
+  <button class="accordion">1. What courses are offered at Evolution Career Institute, Sehore?</button>
+  <div class="panel"><p>Evolution offers coaching for NEET, PNST, CUET (Bio group), and Para-Medical entrance exams. Foundation batches for school students are also available.</p></div>
+
+  <button class="accordion">2. Is the NEET coaching available for both Hindi and English medium students?</button>
+  <div class="panel"><p>Yes, Evolution conducts separate batches for Hindi and English medium students to ensure complete understanding and comfort.</p></div>
+
+  <button class="accordion">3. How can I take admission in Evolution Career Institute?</button>
+  <div class="panel"><p>Admissions are taken through the Evolution Scholarship Admission Test (ESAT) or based on board exam performance and entrance results.</p></div>
+
+  <button class="accordion">4. Is PNST coaching available for only girls?</button>
+  <div class="panel"><p>Yes, since PNST is exclusively for girls, Evolution has dedicated PNST batches guided by expert female and male faculty members.</p></div>
+
+  <button class="accordion">5. Does Evolution provide coaching for CUET (Bio group)?</button>
+  <div class="panel"><p>Yes, specialized batches for CUET (Biology) are available focusing on NCERT and aptitude-based preparation.</p></div>
+
+  <button class="accordion">6. What is the admission procedure for Para-Medical entrance preparation?</button>
+  <div class="panel"><p>Students can apply online or offline. Based on academic background and entrance score, admission is confirmed.</p></div>
+
+  <button class="accordion">7. Is the faculty experienced in competitive exam preparation?</button>
+  <div class="panel"><p>Yes, Evolution has highly qualified and experienced faculty who specialize in NEET, PNST, and CUET exam coaching.</p></div>
+
+  <button class="accordion">8. Are entrance exams like ESAT held offline or online?</button>
+  <div class="panel"><p>ESAT (Evolution Scholarship Admission Test) is conducted in both online and offline modes for student convenience.</p></div>
+
+  <button class="accordion">9. Can 11th or 12th appearing students join Evolution?</button>
+  <div class="panel"><p>Yes, Evolution offers classroom programs for both appearing and passed students of 11th and 12th classes.</p></div>
+
+  <button class="accordion">10. Is the institute recognized for PNST selections?</button>
+  <div class="panel"><p>Yes, Evolution has a strong record of PNST selections, with many students securing top ranks in the state-level entrance exam.</p></div>
+
+  <button class="accordion">11. Does Evolution prepare students for board exams as well?</button>
+  <div class="panel"><p>Yes, Evolution integrates board preparation with competitive exams to ensure strong academic performance.</p></div>
+
+  <button class="accordion">12. Is the CUET Biology course aligned with NCERT?</button>
+  <div class="panel"><p>Yes, CUET preparation is entirely based on NCERT syllabus, with special focus on application-based questions and past papers.</p></div>
+
+  <button class="accordion">13. How does Evolution track student performance?</button>
+  <div class="panel"><p>Regular tests, detailed analysis, personal mentoring, and parent interactions help track and improve student performance.</p></div>
+
+  <button class="accordion">14. What is the format of NEET mock tests at Evolution?</button>
+  <div class="panel"><p>Mock tests follow exact NEET exam patterns with negative marking, subject-wise difficulty balance, and OMR evaluation.</p></div>
+
+  <button class="accordion">15. Is there any guidance for time management and exam strategy?</button>
+  <div class="panel"><p>Yes, expert faculty conduct regular sessions on time management, stress handling, and smart exam strategies.</p></div>
+
+  <button class="accordion">16. Can students take trial classes before admission?</button>
+  <div class="panel"><p>Yes, students may attend demo classes to experience the teaching style and learning environment.</p></div>
+
+  <button class="accordion">17. What is the daily class schedule like?</button>
+  <div class="panel"><p>Classes are held 6 days a week with subject-wise rotations, test slots, and regular revision sessions.</p></div>
+
+  <button class="accordion">18. Are doubt-solving sessions available regularly?</button>
+  <div class="panel"><p>Yes, Evolution conducts scheduled doubt-clearing sessions and provides personal academic mentoring.</p></div>
+
+  <button class="accordion">19. Is Para-Medical preparation done along with board studies?</button>
+  <div class="panel"><p>Yes, the institute provides Para-Medical exam coaching while helping students maintain board exam balance.</p></div>
+
+  <button class="accordion">20. Does Evolution offer guidance for career counseling?</button>
+  <div class="panel"><p>Yes, career guidance seminars and counseling sessions are organized for students and parents periodically.</p></div>
+
+  <button class="accordion">21. Are parents kept informed about student progress?</button>
+  <div class="panel"><p>Yes, regular parent meetings and performance updates are provided to ensure transparency and involvement.</p></div>
+
+  <button class="accordion">22. What is the academic discipline like at Evolution?</button>
+  <div class="panel"><p>Evolution is known for its disciplined environment, attendance tracking, and zero tolerance for irregularity.</p></div>
+
+  <button class="accordion">23. Is Evolution suitable for Hindi medium students?</button>
+  <div class="panel"><p>Yes, separate batches and learning materials are provided for Hindi medium students preparing for NEET and PNST.</p></div>
+
+  <button class="accordion">24. Are any additional practice materials given to students?</button>
+  <div class="panel"><p>Yes, students receive regular practice sheets, model papers, and previous year questions for complete preparation.</p></div>
+
+  <button class="accordion">25. How often are unit tests and revisions held?</button>
+  <div class="panel"><p>Unit tests are held weekly, and syllabus revisions are conducted after each major topic is covered.</p></div>
+</section>
+
+
+<script>
+
+// Accordion Toggle
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(acc => {
+  acc.addEventListener("click", function () {
+    this.classList.toggle("active");
+
+    const panel = this.nextElementSibling;
+
+    // Close others
+    accordions.forEach(a => {
+      if (a !== this) {
+        a.classList.remove("active");
+        a.nextElementSibling.style.display = "none";
+      }
+    });
+
+    // Toggle this one
+    panel.style.display = panel.style.display === "block" ? "none" : "block";
+  });
+});
+
+// Scroll Animation
+function animateFAQOnScroll() {
+  const section = document.getElementById('faq-section');
+  const position = section.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (position < windowHeight - 100) {
+    section.classList.add("visible");
+    window.removeEventListener("scroll", animateFAQOnScroll);
+  }
+}
+
+window.addEventListener("scroll", animateFAQOnScroll);
+window.addEventListener("load", animateFAQOnScroll);
+
+</script>
+
+
+-->
+
